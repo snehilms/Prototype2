@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/box"
+            >
+            <ImageView
+                android:id="@+id/RecordedThumbnail"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="20dp"
+                android:background="@android:color/white"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/name_of_the_Recorded_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Topic Name"
+                    android:textSize="18sp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@android:color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/companyNameRecorded"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Company name"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/Recordedlink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="https://www.xyz.com"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/duration"
+                    android:text="2 hrs"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

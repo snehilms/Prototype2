@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/design3"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/logincpic" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_width="290dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:textSize="60sp"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:text="Welcome!" />
+    <TextView
+        android:id="@+id/niceToSeeYou"
+        android:layout_width="300dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_height="60dp"
+        android:layout_marginTop="-10dp"
+        android:layout_below="@id/textView"
+        android:text="Nice to see you again"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Address"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/fbgmLinear"
+        android:paddingTop="12dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/roundededittext"
+        />
+
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/password"
+    android:layout_width="match_parent"
+    app:hintEnabled="false"
+    android:layout_height="wrap_content"
+    app:passwordToggleEnabled="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:layout_below="@id/username"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="40dp"
+    >
+
+    <EditText
+        android:id="@+id/passwordLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:background="@drawable/roundededittext"
+        android:hint="Password"
+        android:paddingLeft="10dp"
+        />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" forgot password "
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        />
+    
+    <Button
+        android:id="@+id/loginBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:background="@drawable/custom_button_login"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:textSize="23sp"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ProgressBar
+        android:id="@+id/loginProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RandomLinear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:visibility="invisible" />
+<LinearLayout
+    android:id="@+id/RandomLinear"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/loginBT"
+    android:orientation="horizontal"
+    android:layout_marginTop="25dp"
+    android:layout_centerHorizontal="true"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not a Member?"
+        android:textSize="20sp"
+        android:textColor="@color/design_default_color_on_secondary"
+        />
+
+    <TextView
+        android:id="@+id/Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Register"
+        android:textSize="25sp"
+        android:textColor="#7A62A2"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fbgmLinear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/niceToSeeYou"
+        android:layout_marginTop="55dp"
+        android:layout_centerHorizontal="true"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/facebookLogin"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/fb"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:id="@+id/gmailLogin"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/gm"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp"
+    android:layout_height="190dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="3dp"
+    android:outlineAmbientShadowColor="@android:color/black"
+    android:outlineSpotShadowColor="@android:color/black"
+    android:id="@+id/cardView"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E6E6FA"
+        >
+
+        <ImageView
+            android:id="@+id/target_id"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="17dp"
+            />
+        <TextView
+            android:id="@+id/target_name"
+            android:layout_marginTop="5dp"
+            android:text="Engineering"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

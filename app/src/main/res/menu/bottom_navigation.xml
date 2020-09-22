@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/study_material"
+            android:icon="@drawable/ic_library_books_black_24dp"
+            android:title="Material"
+        ></item>
+    <item android:id="@+id/recorded"
+        android:icon="@drawable/ic_record_voice_over_black_24dp"
+        android:title="Recorded"
+        ></item>
+
+    <item android:id="@+id/live_classes"
+        android:icon="@drawable/ic_videocam_black_24dp"
+        android:title="Live"
+        ></item>
+
+    <item android:id="@+id/YouTube"
+        android:icon="@drawable/youtube"
+        android:title="YouTube"
+        ></item>
+    <item android:id="@+id/moreMaterial"
+        android:title="More"
+        android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+        ></item>
+
+</menu>

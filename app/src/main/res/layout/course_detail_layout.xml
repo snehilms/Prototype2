@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/courseCardView"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:elevation="5dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_margin="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#DFFFFF"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                >
+            <ImageView
+                android:id="@+id/courseImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="start"
+                android:layout_marginLeft="5dp"
+                />
+                <TextView
+                    android:id="@+id/coursePrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs 20,000"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="35dp"
+                android:gravity="end"
+                android:layout_gravity="end"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="start"
+                    android:textColor="@android:color/holo_red_dark"
+                    />
+                <TextView
+                    android:id="@+id/courseTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Crash course for jee Advanced very good cpurse really love the its taught"
+                    android:layout_margin="5dp"
+                    android:textSize="15sp"
+                    android:layout_gravity="start"
+                    android:textColor="@android:color/background_dark"
+                    />
+
+                <TextView
+                    android:id="@+id/courseProvider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Provider: Byjusssssss"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="15sp"
+                    android:textColor="#003333"
+                    android:textStyle="bold"
+                    android:layout_gravity="start"
+                    />
+                <Button
+                    android:id="@+id/courseDetailBt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Course Details"
+                    android:paddingLeft="35dp"
+                    android:paddingRight="35dp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/custom_button1"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/white"
+                    />
+                <Button
+                    android:id="@+id/addToCompareBt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to compare"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/custom_button_login"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@android:color/white"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
