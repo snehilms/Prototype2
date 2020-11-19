@@ -5,7 +5,11 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,5 +34,18 @@ public class courseDetails extends AppCompatActivity {
         courseRecylerAdapter courseRecylerAdapter1=new courseRecylerAdapter(allCourse,count);
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         recyclerView.setAdapter(courseRecylerAdapter1);
+
+
+        Button comparecourses = findViewById(R.id.compareAll);
+        comparecourses.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(v.getContext(),comparecourse.class));
+
+            }
+        });
+
+
     }
+
 }

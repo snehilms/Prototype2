@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".viewCourseDetails"></activity>
+        <activity android:name=".comparecourse"></activity>
+        <activity android:name=".viewCourseDetails" />
         <activity android:name=".courseDetails" />
         <activity android:name=".DescriptionPage" />
         <activity android:name=".ViewBookpdf" />
