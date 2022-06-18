@@ -1,0 +1,1 @@
+An App having all the study material and resources compiled having different courses to opt and compare from along with study material linking to video reference, a go to app for any student for finding study material.
